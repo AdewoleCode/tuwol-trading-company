@@ -1,5 +1,7 @@
 import React from 'react'
 import "./About.css"
+import IMG2 from "../../assests/cocoa2.jpg"
+
 const About = () => {
   return (
     <div className='about'>
@@ -7,7 +9,7 @@ const About = () => {
       <div className="about-header">
 
         <div className="about-img">
-          <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707778.jpg?k=56ba0babbcbbfeb3d3e911728831dcbc390ed2cb16c51d88159f82bf751d04c6&o=&hp=1" alt="" />
+          <img src={IMG2} alt="" />
         </div>
         <div className="about-text">
           <h2>ALH. A. A. ADEWOLE</h2>

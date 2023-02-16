@@ -91,12 +91,15 @@ header .nav-btn {
 .icon .contact-box {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: px;
 }
 
 .icon .contact-box h3{
     font-size: 15px;
 }
+
+
+ 
 
 .phone {
     display: flex;
@@ -123,11 +126,30 @@ nav {
 	align-items: center;
 }
 
+.icon a {
+	color: chocolate;
+	text-decoration: none;
+}
+
+.contact-box .ref{
+	color: chocolate;
+	text-decoration: none;
+
+}
+
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
 		display: block;
+		font-size: 24px;
 		/* visibility: visible; */
 		opacity: 1;
+		color: chocolate;
+	}
+
+	header .nav-close-btn{
+		font-size: 24px;
+		color: #fff;
+
 	}
 
 	header nav {
@@ -145,6 +167,10 @@ nav {
         color: #fff;
 		transition: 1s;
 		transform: translateX(-100vh);
+	}
+
+	.homee{
+		display: block;
 	}
 
 	header .responsive_nav {

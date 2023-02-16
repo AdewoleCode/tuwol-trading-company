@@ -88,7 +88,7 @@ const MainCarousel = () => {
                             alt={`carousel-${index}`}
                             style={{
                                 width: "100%",
-                                height: "600px",
+                                height: "620px",
                                 objectFit: "cover",
                                 backgroundAttachment: "fixed",
                             }}
@@ -100,23 +100,23 @@ const MainCarousel = () => {
                             textAlign="left"
                             backgroundColor="rgb(0, 0, 0, 0.4)"
                             position="absolute"
-                            top={isNonMobile ? "35%" : "40%"}
+                            top={isNonMobile ? "35%" : "62%"}
                             left={isNonMobile ? "250px" : "0"}
                             right={isNonMobile ? undefined : "0"}
                             margin={isNonMobile ? undefined : "0 auto"}
-                            // maxWidth={isNonMobile ? undefined : "200px"}
+                        // maxWidth={isNonMobile ? undefined : "200px"}
                         >
                             <Typography lineHeight="1.3"
-                            width="850px"
-                            fontWeight="bolder"
-                             variant={isNonMobile ? "h4" : "h6"}>We take pride in being the most reliable cocoa trading company around</Typography>
+                                width={isNonMobile ? "850px" : "400px"}
+                                fontWeight="bolder"
+                                variant={isNonMobile ? "h4" : "h6"}>We take pride in being the most reliable cocoa trading company around</Typography>
                             <Typography
                                 fontWeight="bold"
                                 marginTop="10px"
                                 color="chocolate"
                                 sx={{ textDecoration: "underline" }}
                             >
-                              scroll down to learn more about us
+                                scroll down to learn more about us
                             </Typography>
                         </Box>
                     </Box>

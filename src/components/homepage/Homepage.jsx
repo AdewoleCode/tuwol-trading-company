@@ -1,6 +1,12 @@
 import React from 'react'
 import MainCarousel from '../mainSlider/MainSlider'
 import "./HomePage.css"
+import { Link } from 'react-router-dom'
+import IMG1 from "../../assests/cocoa1.jpg"
+import IMG2 from "../../assests/cocoa2.jpg"
+import IMG3 from "../../assests/cocoa3.jpeg"
+import IMG4 from "../../assests/cocoa4.jpg"
+import IMG5 from "../../assests/cocoa5.jpg"
 
 const Homepage = () => {
     return (
@@ -11,10 +17,12 @@ const Homepage = () => {
 
                 <div className="welcome-text">
                     <h1>TUWOL COCOA TRADING COMPANY</h1>
-                    <p>Our history dates back to 1948, however, our operation as it is today was incorporated in 2002, with formation and transition period between 1999-2002.
-                        We emanated from R.A. Adeniji Enterprises, a prominent cocoa producer and supplier to many international buyers for more than 50 years.
-                        We have continued this knowledge and skills successfully from the farms to many of our clients; many of whom are cocoa processors and chocolate producers globally.</p>
-                    <button>More About Us</button>
+                    <p>founded in 2010 but our history goes far behind.
+                        founder was formely an employee of starlinks global and ideal limited,
+                        a prominent cocoa producer and supplier to many international buyers for more than 50 years.
+                        We have continued with knowledge, and experience from being an employee to being one of the major
+                        supplier of cocoa in last 10years.</p>
+                    <Link to="/about"><button>More About Us</button></Link>
                 </div>
             </div>
             <div className='services'>
@@ -42,16 +50,18 @@ const Homepage = () => {
 
                         </p>
                     </div>
-                    <div className="serv">
+                    {/* <div className="serv">
                         <h3>LOGISTICS</h3>
                         <p>
                             We are fully represented across lengta, this has necessitated us to classify
-                            these locations into zones. Our warehouses are located in all the zones across Nigeria with its main warehouse in Lagos.
+                            these locations into zones. Our warehouses are locate
+                            d in all the zones across Nigeria with its main warehouse in Lagos.
                             Lagos warehouse is located
-                            on Lagos –Apapa expressway, its proximity to Nigeria’s major seaport gives it an added advantage to shipping.
+                            on Lagos –Apapa expressway,
+                             its proximity to Nigeria’s major seaport gives it an added advantage to shipping.
                         </p>
 
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
@@ -63,20 +73,20 @@ const Homepage = () => {
                 <h1>From Our Gallery</h1>
                 <div className="gallery-box">
                     <div className="gallery .box1">
-                        warehosusing
+                        <img src={IMG1} alt="" />
                     </div>
                     <div className="gallery .box2">
-                        logistic
+                        <img src={IMG5} alt="" />
                     </div>
                     <div className="gallery .box3">
-                        Agricultural service
+                        <img src={IMG2} alt="" />
                     </div>
                     <div className="gallery .box3">
-                        Agricultural service
+                        <img src={IMG3} alt="" />
                     </div><div className="gallery .box3">
-                        Agricultural service
+                        <img src={IMG4} alt="" />
                     </div><div className="gallery .box3">
-                        Agricultural service
+                        <img src={IMG5} alt="" />
                     </div>
                 </div>
             </div>
