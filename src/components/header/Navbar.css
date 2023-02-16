@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+/* .nav_container{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #d3c5c5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99; 
+    position: relative;
+} */
+
+.nav_title{
+    text-decoration: none;
+    color: chocolate;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid #d3c5c5;
+	z-index: 99999; 
+	position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: chocolate;
+}
+
+nav a {
+	margin: 0 1rem;
+    color: chocolate;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 17px;
+
+}
+
+nav a:hover {
+	color: grey;
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: black;
+	/* color: rgb(13, 217, 253); */
+	/* visibility: hidden; */
+	display: none;
+	opacity: 0;
+	font-size: 1.3rem;
+}
+
+
+
+.nav_userIcon,
+.nav_cartIcon{
+    font-size: 24px;
+    cursor: pointer;
+	color: rgb(13, 217, 253);
+}
+
+
+.icon .contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon .contact-box h3{
+    font-size: 15px;
+}
+
+.phone {
+    display: flex;
+    gap: 10px;
+}
+
+.email {
+    display: flex;
+    gap: 15px;
+
+}
+
+.phone .icon {
+    font-size: 20px;
+}
+
+.email .icon {
+    font-size: 18px;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		display: block;
+		/* visibility: visible; */
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 65%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		background-color: chocolate;
+        color: #fff;
+		transition: 1s;
+		transform: translateX(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+        font-size: 2rem;
+	}
+
+	nav a {
+		font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 5rem;
+	}
+}

@@ -1,0 +1,51 @@
+.about {
+    border: 1px solid red;
+    margin-top: 100px;
+    padding: 20px 10px;
+}
+
+
+.about h1 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.about-header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+
+}
+
+
+.about-img{
+    flex-basis: 400px;
+    height: 400px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text{
+    flex-basis: 500px;
+}
+.about-text h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about-text h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+
+}
+
+.about-text P {
+    font-size: 20px;
+}

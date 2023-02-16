@@ -1,0 +1,119 @@
+.homepage {
+    /* background-color: rgb(243, 236, 236); */
+}
+
+.welcome {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.welcome .welcome-text {
+    margin-top: 30px;
+    border: 1px solid red;
+    background-color: chocolate;
+    color: white;
+    padding: 30px 10px;
+
+}
+
+.welcome .welcome-text h1 {
+    font-size: 29px;
+}
+
+.welcome .welcome-text p {
+    font-size: 22px;
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.welcome .welcome-text button {
+    padding: 10px 25px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: chocolate;
+    font-weight: bolder;
+    background-color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+.welcome .welcome-text button:hover {
+    background-color: rgb(223, 125, 55);
+    color: white;
+}
+
+.services {
+    padding: 40px 10px;
+    text-align: center;
+
+}
+
+.services h1 {
+    margin-bottom: 20px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.services .serv {
+    padding: 15px 15px;
+    width: 420px;
+    height: 460px;
+    border: 1px solid red;
+    background-color: chocolate;
+    color: white;
+    border-radius: 8px;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+    box-shadow: 6px 18px 12px -6px rgba(0, 0, 0, 0.86);
+    -webkit-box-shadow: 6px 18px 12px -6px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 6px 18px 12px -6px rgba(0, 0, 0, 0.86);
+
+
+}
+
+.services .serv:hover {
+    scale: 1.05;
+}
+
+
+.serv h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.serv p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+.gallery-box {
+    border: 1px solid red;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.gallery-box .gallery{
+    width: 300px;
+    height: 280px;
+    border: 1px solid green;
+
+}
